@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <legend> Личная информация</legend>
+        <input type="text" name="ФИО"> <BR>
+        <label>your name <input type="text" name="" id="">
+            </label>
+            <label for="test">your name</label>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere dolore omnis iure impedit ab maxime doloremque a quo alias sequi vitae at, et vel neque architecto exercitationem similique magni!
+            Facere asperiores sequi ipsam ipsum rem consequuntur! Repellendus explicabo, ex recusandae totam cum quia nulla assumenda, facere ducimus beatae eaque enim itaque. Id, eum dolorum cupiditate velit voluptates molestiae earum.
+            Asperiores non vero culpa maiores unde minima itaque eaque illo consequuntur adipisci quae corrupti velit aliquid aut et assumenda veritatis, eos magnam quasi exercitationem. Necessitatibus sapiente doloremque ad nihil velit.
+            Enim ab asperiores odio, atque quo at nulla veniam facere autem iusto laborum! Vitae quis nostrum magni deleniti, cumque ipsam doloremque eaque ad tenetur labore, iure sapiente rem exercitationem unde.
+            Ex iusto laborum assumenda beatae blanditiis aliquam perferendis doloribus voluptate quaerat atque, veritatis dolores, earum iure impedit voluptatibus nulla quod eaque aspernatur ipsa enim. Repellat veniam dolore repellendus vitae accusantium.</p>
+            
+            <input type="text" name="ФИО" id="test">
+            <input type="text" tabindex="4">
+            <input type="text" tabindex="3">
+            <input type="text" tabindex="2">
+            <input type="text" tabindex="1">
+        
+
+  
+</fieldset>
+<fieldset>
+    <legend>checkbox</legend>
+    <input type="checkbox" name="check1">
+    <input type="checkbox" name="check2">
+    <input type="checkbox" name="check3">
+    <input type="checkbox" name="check4">
+</fieldset>
+<fieldset>
+    <legend>checkbox</legend>
+    <input type="checkbox" name="check[]" value="check1">
+    <input type="checkbox" name="check[]"value="check2">
+    <input type="checkbox" name="check[]"value="check3">
+    <input type="checkbox" name="check[]"value="check4">
+</fieldset>
+<fieldset>
+    <legend>radio</legend>
+    <input type="radio" name="radio[]" value="radio1">
+    <input type="radio" name="radio[]"value="radio2">
+    <input type="radio" name="radio[]"value="radio3">
+</fieldset>
+
+<fieldset>
+    <legend>email</legend>
+    <input type="email" name="email" pattern="preg_match('/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u', $item)">
+</fieldset>
+
+<fieldset>
+    <legend>file</legend>
+    <input type="file" name="file">
+</fieldset>
+
+<fieldset>
+    <legend>textarea</legend>
+   <textarea name="textarea" cols="30" rows="10"></textarea>
+</fieldset>
+
+<fieldset>
+    <legend>select</legend>
+    <select name="select" size="2" multiple>
+        <option value="1">Minsk</option>
+        <option value="2">Brest</option>
+
+    </select>
+</fieldset>
+<input type="number" min="0" max="10" step="2">
+
+
+<input type="number" pattern="[0-9]{5,10}">
+<label for="1">Введите что-то</label>
+<input type="text" id="1" value="123456">
+
+<label for="2">Плейсхолдер</label>
+<input type="text" id="2">
+
+
+
+
+
+<input type="submit" value="send">
+</form>
+<form action=""></form>
+</body>
