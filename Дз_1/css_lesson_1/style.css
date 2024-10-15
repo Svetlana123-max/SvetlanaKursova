@@ -1,0 +1,25 @@
+h1{
+    style="text-align: center; color: bisque;"
+}
+#fff{
+    color: black;
+    font-style: italic;
+}
+p{
+    color: chartreuse;
+}
+.vip{
+    color: black;
+}
+.super_vip{
+    color: red;
+}
+#fff{
+    font-style: normal;
+}
+ul.a li{
+    color: blue;
+}
+ul.b li{
+    color:brown
+}
