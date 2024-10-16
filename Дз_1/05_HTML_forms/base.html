@@ -23,10 +23,10 @@
         <tr align="left">
             <th>
                 <p><strong>Простая форма поиска с вариантами:</strong></p>
-                <form action="http://sc.it-academy.by/fe/form.php" method="post">
+                <form action=" http://fe.it-academy.by/TestForm.php" method="post">
                     <fieldset>
-                        <legend>Строка поиска</legend>
-                        <input type="text" max="10">
+                        <legend>Строка поиска 1</legend>
+                        <input type="text" name="search" MAXLENGTH="10">
                         <input type="submit" value="Искать"> <br>
                         <label>
                             <input type="radio" name="radio_group" value="value_01" checked> на сайте
@@ -42,22 +42,33 @@
                 <p><strong>Простая форма поиска с вариантами:</strong></p>
                 <fieldset>
                     <legend>Строка поиска</legend>
-                    <input type="text">
-                    <input type="submit" value="Искать"> <br>
-                    <label>
-                        <input type="radio" name="radio_group" vaue="value_01">на сайте
-                    </label>
-                    <label>
-                        <input type="radio" name="radio_group" checked>в google
-                    </label>
-                    <p><em>* - обязательное поле <br>
-                        Автофокус в поле поиска</em></p>
-
+                    <form action=" http://fe.it-academy.by/TestForm.php" method="post">
+                        <input type="text" name="search" required="required" autofocus>*
+                        <input type="submit" value="Искать"> <br>
+                        <label>
+                            <input type="radio" name="radio_group" vaue="value_01">на сайте
+                        </label>
+                        <label>
+                            <input type="radio" name="radio_group" checked>в google
+                        </label>
+                        <p><em>* - обязательное поле <br>
+                                Автофокус в поле поиска</em></p>
+                    </form>
                 </fieldset>
             </th>
         </tr>
         <tr align="left">
-            <th><strong>Простая форма авторизации:</strong></th>
+            <th><strong>Простая форма авторизации:</strong>
+                <fieldset>
+                    <legend>Авторизируйтесь</legend>
+                    <label>
+                        <input type="text" required="required"> Логин<br>
+                        <input type="password" required="required">Пароль
+                        <input type="checkbox">
+                    </label>
+                </fieldset>
+
+            </th>
             <th><strong>Опрос(голосование):</strong></th>
         </tr>
         <tr align="left">
