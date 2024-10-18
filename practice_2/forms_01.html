@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+        <label>First name: <input type="text" placeholder="Enter first name"></label> <br>
+        <label>Last name: <input type="text" placeholder="Enter last name"></label> <br>
+        <label>Email: <input type="email" placeholder="Enter email address"></label> <br>
+        <label>Password: <input type="password"></label> <br>
+        Gender: <br>
+        <label>Male: <input type="radio" name="gender" value="male"></label> <br>
+        <label>Female: <input type="radio" name="gender" value="female"></label> <br>
+        <label>Other: <input type="radio" name="gender" value="other"></label> <br>
+        <label>Age: <input type="number"></label> <br>
+        Preferences:<br>
+        <label>Acryl painting <input type="checkbox" name="preferences[]" value="acryl"></label> <br>
+        <label>Oil painting <input type="checkbox"name="preferences[]" value="oil"></label> <br>
+        <label>Water color painting <input type="checkbox" name="preferences[]" value="water"></label> <br>
+        <label> Select occupation
+        <select name="list" id="list">
+            <option value="1">Student</option>
+            <option value="2">Teacher</option>
+            <option value="3">IT specialist</option> <br>
+            </select>
+            </label><br>
+            
+            <textarea name="textarea" cols="30" rows="10">Share a few words about yourself</textarea> <br>
+
+        <input type="reset" value="RESET">
+        <input type="submit" value="SUBMIT">
+
+        </form>
+</body>
+</html>
