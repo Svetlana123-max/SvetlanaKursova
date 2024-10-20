@@ -1,3 +1,10 @@
+body{
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 h1{
     style="text-align: center; color: bisque;"
 }
@@ -6,20 +13,51 @@ h1{
     font-style: italic;
 }
 p{
+    font-weight: 900;
     color: chartreuse;
 }
 .vip{
     color: black;
 }
 .super_vip{
+    font-family: "Agdasima", sans-serif;
+  font-weight: 700;
+  font-style: normal;
     color: red;
+    visibility: visible;
 }
 #fff{
     font-style: normal;
 }
 ul.a li{
     color: blue;
+    font-size: 25px;
+    list-style-type: square;
 }
 ul.b li{
     color:brown
+}
+div{
+    width: 500px;
+    height: 300px;
+    background-color: red;
+    background-image: url(images.jpeg);
+    background-position: left;
+    background-repeat: no-repeat;
+    font-family: "Agdasima", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:blue;
+    background-attachment: fixed;
+}
+header{
+    background-color:aqua;
+    height: 50px;
+    width: 50px;
+}
+strong{
+    background-color:rgb(105, 213, 148);
+    height: 50px;
+    width: 50;
+    display: inline-block;
 }
