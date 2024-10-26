@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            height: 100px;
+            background-color: aqua;
+        }
+
+        .left-menu {
+            background-color: bisque;
+            float: left;
+            height: 200px;
+            width: 100px;
+        }
+
+        .sub {
+            height: 25px;
+            background-color: yellow;
+            margin: 5px;
+            list-style-type: none;
+
+        }
+
+        ul {
+            padding-left: 5px;
+        }
+
+        .right-menu {
+            background-color: bisque;
+            float: right;
+            height: 200px;
+            width: 100px;
+        }
+
+        .right-menu-inner {
+            height: 100px;
+            background-color: aqua;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        .main {
+            background-color: aqua;
+            height: 100px;
+            margin: 10px;
+            margin-left: 120px;
+            margin-right: 120px;
+
+        }
+
+        .clear {
+            height: 0px;
+
+            clear: both;
+        }
+
+        .footer {
+            background-color: aqua;
+        }
+
+        .wrap {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">header</div>
+    <div class="wrap">
+        <div class="left-menu">
+            <ul>
+                <li class="sub"></li>
+                <li class="sub"></li>
+                <li class="sub"></li>
+                <li class="sub"></li>
+            </ul>
+        </div>
+        <div class="right-menu">
+            <div class="right-menu-inner"></div>
+        </div>
+        <div class="main">main</div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+
+</html>
