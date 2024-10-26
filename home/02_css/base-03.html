@@ -12,25 +12,22 @@
             box-sizing: border-box;
         }
 
-        .parent {
-            height: 500px;
-            width: 500px;
+        .wrap {
             background-color: #dbdbdb;
-            margin-bottom: 5px;
-            float: left;
-}
+            margin: 5px;
+        }
 
         .navi {
             background-color: #cccccc;
             float: left;
             height: 300px;
             width: 200px;
-}
+        }
 
         .article {
             background-color: #aaa;
             margin-bottom: 2px;
- }
+        }
 
         .footer {
             background-color: #cccccc;
@@ -38,51 +35,54 @@
             margin: 2px;
             margin-bottom: 5px;
         }
-        .wrap{
-            background-color: #dbdbdb;
-            margin: 5px;
-        }
-        .clear{
+
+        .rasporka {
             height: 0px;
-            background-color:red;
-            clear: both; 
+            background-color: red;
+            clear: both;
         }
-        .letter{
+
+        .letter {
             background-image: url(letter_2.png);
             float: right;
-           
+
             background-position: 200px 200px;
             background-repeat: no-repeat;
 
             height: 100px;
             margin-right: 20px;
             margin-top: 50px;
-          }
-          
+        }
     </style>
 </head>
 
 <body>
     <div class="wrap">
+        <div class="navi"> <strong>Блок навигации</strong> <br> <br>
 
-        <div class="navi">navigation Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, animi deserunt
+            navigation Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, animi deserunt
             architecto, laborum sapiente, laboriosam vitae enim sequi cum at culpa? Veniam illo ratione et pariatur
-            quidem nemo amet distinctio. Lorem ipsum dolor sit  Lorem ipsum dolor sit
+            quidem nemo amet distinctio. Lorem ipsum dolor sit Lorem ipsum dolor sit
         </div>
-        <div class="article">article 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facilis sequi incidunt soluta temporibus laudantium atque tempora veniam quasi earum? Hic porro commodi expedita eveniet ullam dolores, animi minus sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse, possimus asperiores eveniet, modi debitis reprehenderit quibusdam dolores fugiat quis neque id voluptate aspernatur expedita incidunt vero repellat dolorum sequi.
-</div>
-        <div class="article">article 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat facilis sequi incidunt soluta temporibus laudantium atque tempora veniam quasi earum? Hic porro commodi expedita eveniet ullam dolores, animi minus sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse, possimus asperiores eveniet, modi debitis reprehenderit quibusdam dolores fugiat quis neque id voluptate aspernatur expedita incidunt vero repellat dolorum sequi.
-
+        <div class="article"> <strong>Статья 1</strong> <br> <br>article 1 Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quaerat facilis sequi
+            incidunt soluta temporibus laudantium atque tempora veniam quasi earum? Hic porro commodi expedita eveniet
+            ullam dolores, animi minus sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse.
+        </div>
+        <div class="article"> <strong>Статья 2</strong> <br> <br>article 2 Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quaerat facilis sequi
+            incidunt soluta temporibus laudantium atque tempora veniam quasi earum? Hic porro commodi expedita eveniet
+            ullam dolores, animi minus sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse.
 
             <div class="letter"> <img src="letter_2.png" alt="email" style="width: 100px;"></div>
-            
+
         </div>
-        <div class="clear"></div>
+        <div class="rasporka"></div>
     </div>
     <div class="footer">footer</div>
 
- 
-    
+
+
 </body>
 
 </html>
