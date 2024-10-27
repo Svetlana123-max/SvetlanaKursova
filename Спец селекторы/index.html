@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    h1+p{
+        color: rgb(137, 88, 205);
+    }
+    h1~p{
+        font-style:italic;
+    }
+    div span{
+        color:aqua;
+    }
+   [title="hello"]{
+    border: 2px solid red;
+   }
+   [type="text"]{border: 2px solid red}
+   [type="email"]{border: 2px solid rgb(71, 201, 59)}
+   [type="number"]{border: 2px solid rgb(98, 44, 205)}
+   [type="password"]{border: 2px solid rgb(176, 194, 43)}
+
+   a[href^="http"] {color: red;}
+   a[href^="https"]{color:green;}
+   a[href$="by/"] {font-weight: bold;}
+   a[href$="com/"] {font-style: italic;}
+   a[href$="/main"]{text-decoration: line-through;}
+
+   p::first-letter{font-size: 50px;}
+   p::first-line{text-decoration: underline;}
+   p::selection{background-color: black; color:bisque}
+
+   .planet{
+    counter-reset: planet;
+   }
+   .planet li::before {
+    counter-increment: planet+1;
+    content: "Планета " counter(planet) ": "
+   }
+
+   a:hover{
+    background-color:aqua;
+   }
+   a:focus{
+    background-color: bisque;
+   }
+
+   li:first-child{
+    background-color: chocolate;
+   }
+   li:nth-child(odd){
+    background-color: aquamarine;
+   }
+   li:nth-child(even){
+    background-color: blue;
+   }
+
+
+</style>
+
+
+</head>
+<body>
+    <h1>dfdfdfdf</h1>
+    <p>hello</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime incidunt blanditiis obcaecati quas, omnis ipsam vitae, dignissimos molestiae laborum asperiores perspiciatis magnam atque reprehenderit? Culpa dolor dolores ut? Nihil, autem! </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nemo ratione sit animi voluptatum labore, doloribus veniam quidem, est sapiente earum hic minus eum, illo itaque laborum nobis officia inventore. </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, distinctio quis? Veniam sapiente distinctio nostrum consequuntur. Debitis aliquid ea laboriosam voluptate nulla optio, fuga veniam quos vitae, distinctio, rerum odio.At ratione ?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi fugit unde sequi explicabo delectus suscipit ducimus minus, sint eos, reiciendis dolorem numquam sit et animi aspernatur nostrum qui assumenda ex.</p>
+
+<hr>
+<span>span 1</span>
+<div>
+    <span>span 2</span>
+    <p>
+        <span>span 3</span>
+    </p>
+</div>
+
+<hr>
+
+<input type="text"> <br>
+<input type="email" title="hello"> <br>
+<input type="number"> <br>
+<input type="password" title="hello 1"> <br>
+
+
+<hr>
+
+<a href="https://av.by/">av.by</a> <br>
+<a href="https://de.aliexpress.com/">aliexpress</a> <br>
+<a href="http://stigmat19.github.io/main">Домашние задания</a>
+
+<hr>
+
+<ul class="planet">
+    <li>Меркурий</li>
+    <li>Венера</li>
+    <li>Земля</li>
+    <li>Марс</li>
+    <li>Юпитер</li>
+    <li>Уран</li>
+    <li>Нептун</li>
+    
+
+</ul>
+</body>
+</html>
