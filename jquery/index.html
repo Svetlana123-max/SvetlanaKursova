@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 1000px;
+        }
+        #aaa {
+             background-color: red;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="aaa">test</div>
+    <button id="btn">button</button>
+
+    <form>
+        <input type="text" name="fio">
+        <input type="submit" value="send">
+    </form>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        
+        $(document).ready(function ($) {
+           /* Вывести алерт
+           alert("Это сообщение, которое выводится при старте страницы");
+            $('#test').css('transform', 'rotate(45deg)')
+            $('#test').css('backgroundColor', 'green');
+
+           *$('button').on('click', function () {
+                $('#test').css('backgroundColor', 'green')
+            })
+
+            Перекрасить границу
+$('input[type=text]').focus(function(){
+    $(this).css('border', '3px solid red')
+}).blur(function(){
+    $(this).css('border', '3px solid green')
+})*/
+
+
+//var counter = 0;
+
+/*Сдвинуть по наведению мыши
+$('#btn').on('mousemove', function(){
+    
+    $('#aaa').animate({
+        marginLeft:200,
+        color: "red" , 
+        backgroundColor: 'green '
+    }, 3000, function(){
+        $('#btn').animate({
+            width: 500
+        }, 2000) 
+    })
+})*/
+
+/*Скрыть / раскрыть
+$('#btn').click(function(){
+    $('#aaa').slideToggle();
+    
+})*/
+
+/* Изменить css свойства
+$('#btn').click(function(){
+    $('#aaa').css(
+        {'backgroundColor':'blue', 'color': 'red'});
+})*/
+
+/*Проверить скролл окна
+$(window).on('scroll', function(){
+   console.log( $(this).scrollTop());
+})*/
+
+/* По нажатии на кнопку проскроллить на 500пикселей
+$('#btn').click(function(){
+    $(window).scrollTop(500);
+})*/
+
+/* ajax
+$('form').submit(function(event){
+    $('form').submit(function(e){
+        e.preventDefault();
+        var value = $('input[type=text]').val(); 
+        var name = $('input[type=text]').attr('name');
+       if (value ===''){
+        alert("enter value");
+       }
+       else{
+        //console.log('form send');
+
+        $.ajax({
+  url: "http://fe.it-academy.by/TestForm.php",
+  type: "GET",
+  data: {name: value},
+  success: function(){
+    alert( "Прибыли данные: ");
+  },
+  error: function(err){
+    alert('err' +err);
+  }
+});
+       }
+    })
+       })*/
+    $('#btn').click(function(){
+    $('#aaa').html('<p>test<span>test2<span></p>')
+    })
+
+
+
+});
+
+
+    </script>
+</body>
+
+</html>

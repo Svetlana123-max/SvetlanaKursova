@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th {
+            background-color: #808080;
+        }
+
+        tr {
+            border: 4px dotted
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #d3d3d3
+        }
+
+        p {
+            text-align: center;
+            width: 300px;
+        }
+
+        #btn {
+            color: white;
+            background-color: blue;
+            border: solid, rgb(100, 149, 227);
+            height: 35px;
+            width: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table id="table">
+        <tr class="tr">
+            <th>ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рож.</th>
+            <th>Данные 01</th>
+            <th>Данные 02</th>
+        </tr>
+        <tr class="tr">
+            <td>Иванов Иван Иванович</td>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.0960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr class="tr">
+            <td>Петрова илона Петровна</td>
+            <td>Ж</td>
+            <td>секретарь</td>
+            <td>01.01.1989</td>
+            <td>98795</td>
+            <td>46523</td>
+        </tr>
+        <tr class="tr">
+            <td>Сидоров Илья Петрович</td>
+            <td>М</td>
+            <td>бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>45645</td>
+            <td>654</td>
+        </tr>
+        <tr class="tr">
+            <td>Пупин Фёдор Фёдорович</td>
+            <td>М</td>
+            <td>водитель</td>
+            <td>01.01.1963</td>
+            <td>6541</td>
+            <td>8452545</td>
+        </tr>
+        <tr class="tr">
+            <td>Крупин Сергей Иванович</td>
+            <td>М</td>
+            <td>водитель 2</td>
+            <td>01.01.1983</td>
+            <td>12365842</td>
+            <td>14856</td>
+        </tr>
+        <p>ДАННЫЕ О СОТРУДНИКАХ</p>
+    </table>
+    <br><br>
+
+    <input type="button" id="btn" value="нет скрытых строк">
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function ($) {
+
+
+            $('.tr').click(function () {
+                console.log('hello')
+                $(this).fadeOut();
+                $('#btn').val('Показать')
+
+            })
+
+
+
+            $('#btn').click(function () {
+                $('.tr').fadeIn('slow');
+            })
+
+        });
+    </script>
+
+</body>
+
+</html>

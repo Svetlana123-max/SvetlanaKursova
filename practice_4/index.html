@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap {
+            background-color: white;
+            margin: auto;
+            height: 500px;
+            width: 500px;
+            position: relative;
+            border: solid 2px black;
+        }
+
+        .one {
+            position: absolute;
+            left: 0;
+            top: 0px;
+            z-index: 1;
+        }
+
+        .two {
+            position: absolute;
+            right: 0;
+            top: 10px;
+            z-index: 2;
+        }
+        .three{
+            position: absolute;
+            right: 200px;           
+            bottom: 0px;
+            z-index: 3;
+        }
+        .four{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 4; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <img class="one" src="biohazard.png" alt="bio">
+        <img class="two" src="Man-and-woman.png" alt="Man-and-woman">
+        <img class="three" src="Yin_and_Yang.png" alt="yin">
+        <img class="four" src="No_smoking.png" alt="smoke">
+    </div>
+</body>
+
+</html>
