@@ -1,58 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-<style>
-  div{
-  height: 100px;
-  background-color: green;
-}
-</style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation-float.min.css"
+    crossorigin="anonymous">
 
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation-float.min.css" crossorigin="anonymous">
-  
-
- 
-  
-  
-  
 </head>
+
 <body>
 
-  <div class="row">
-<div></div> 4
-<div></div>8
+  <h1 align="center" <STRONG> HOW-TO: Программа на Python, Часть 1</STRONG> </h1>
 
+  <div class="row collapse">
+    <div class="small-12 medium-4 large-4 columns">
+      <div>
+        <ul>
+          <li> <a href="Часть_1.html" target="_blank"><em> Программа на Python &mdash; часть 1</em></a> </li>
+          <li> <a href="Часть_2.html" target="_blank"><em>Программа на Python &mdash; часть 2</em></a> </li>
+          <li> <a href="Часть_3.html" target="_blank"><em>Программа на Python &mdash; часть 3</em></a> </li>
+        </ul>
+      </div>
 
-
-
-    <div class="small-12 large-12 columns">123456789
-      <div class="example-content"></div>
     </div>
-      <div class="small-12 large-4 columns">123456789
-        <div class="example-content"></div>
-    </div>
-    <div class="small-12 large-8 columns">123456789
-      <div class="example-content"></div>
-  </div>
-  <div class="small-12 large-4 columns">123456789
-    <div class="example-content"></div>
-</div>
-<div class="small-12 large-8 columns">123456789
-  <div class="example-content"></div>
-</div>
-  </div>
- 
 
-  
+    <div class="small-12 medium-8 large-8 columns">
+
+      <div>
+        <h4>HOW-TO: Программа на Python, Часть 1</h4>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row collapse">
+    <div class="small-12 medium-4 large-4 columns">
+      <div>
+        <h3 id="contents">Содержание</h3>
+        <ul>
+
+          <li><A HREF="#chapter 1">Наша первая программа</A> </li>
+          <li><A HREF="#chapter 2">Пример цикла For</A> </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="small-12 medium-8 large-8 columns">
+
+      <div align="left">
+        Из множества существующих языков программирования Python — один из самых лёгких
+        в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+        Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+        обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+        создание консольных приложений, а в следующей — программирование графических
+        интерфейсов (GUI). Давайте создадим простую программу прямо сейчас.
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row collapse">
+    <div class="small-12 medium-4 large-4 columns">
+      <div>
+        <h3 id="chapter 1">Наша первая программа</h3>
+        <span> <a href="#contents"> К содержанию</a></span>
+      </div>
+
+    </div>
+
+    <div class="small-12 medium-8 large-8 columns">
+
+      <div>Наберём код в текстовом редакторе (например, в <b>gedit</b> ). Потом мы разберёмся, что делает
+        каждая строка и пойдём дальше.</div>
+      <br>
+
+
+      <div>Введите эти 4 строки:</div>
+      <br><br>
+
+      <kbd>#!/usr/bin/env python <br>
+        print 'Hello. I am a python program.' <br>
+        name = raw_input("What is your name?") <br>
+        print "Hello there, " + name + "!"</kbd>
+      <br><br>
+
+      <div>Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить его в папке
+        <b>python_examples</b>
+        в домашнем каталоге. Этот пример показывает, как просто написать
+        программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+        этого введите в терминале
+      </div>
+
+      <br><br>
+
+
+      <kbd> <strong>chmod +x hello.py</strong></kbd>
+      <p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+      <kbd>greg@earth:~/python_examples$ ./hello.py <br>
+        Hello. I am a python program. <br>
+        What is your name? Ferd Burphel <br>
+        Hello there, Ferd Burphel! <br>
+        greg@earth:~/python_examples$</kbd>
+      <br><br>
+
+      <p>Вот и всё.</p>
+
+    </div>
+  </div>
 
   <!--<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/js/foundation.min.js" crossorigin="anonymous"></script>-->
 
-
-
 </body>
-</html>
 
+</html>
