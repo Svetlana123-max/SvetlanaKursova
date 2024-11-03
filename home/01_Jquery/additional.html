@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: solid, black;
+
+            max-width: 400px;
+        }
+
+        input[type="text"] {
+            margin: 5px;
+        }
+
+        input[type="button"] {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <br>
+        <input type="text" id="pass1">* Пароль <br><br>
+        <input type="text" id="pass2">* Повторите пароль <br>
+        <br><input type="button" id="btn" value="Отправить">
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+
+        /*Я совсем не поняла, как делать предложенный вариант. И поэтому сделала свой. Отличается тем, что сравнение происходит при клике на кнопку. Пожалуйста прокомментируйте мою реализацию. */
+        $(document).ready(function () {
+            $('#btn').on('click', function()  {
+                var text1 = $('#pass1').val();
+                var text2 = $('#pass2').val();
+
+
+                if (text1 === text2) {
+                    $('#pass1, #pass2').css('background-color', 'green');
+                } else {
+                    $('#pass1, #pass2').css('background-color', 'red');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
