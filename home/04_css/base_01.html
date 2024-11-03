@@ -1,38 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-div{
-    border: 1px solid rgba(151, 151, 148, 0.77);
-border-radius: 0px 16px 0px 16px;
-    margin: 5px;
-}
+    <style>
+        div {
+            border: 1px solid rgba(151, 151, 148, 0.77);
+            border-radius: 0px 16px 0px 16px;
+            margin: 5px;
+        }
 
-</style>
+        ul {
+            list-style-type: none;
+
+        }
+
+        .one {
+            width: 160px;
+        }
+
+        .two {
+            width: 140px;
+        }
+
+        .three {
+            width: 80px;
+        }
+
+
+        li {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .hide1 {
+            display: none;
+            float: left;
+        }
+
+        .hide2 {
+            display: none;
+            float: left;
+        }
+
+        .hide3 {
+            display: none;
+            float: left;
+        }
+
+        .one:hover .hide1 {
+            display: block;
+            position: absolute;
+            left: 100%;
+            top: 0%;
+            z-index: 1
+        }
+
+        .two:hover .hide2 {
+            display: block;
+            position: absolute;
+            left: 100%;
+            top: 0%;
+            z-index: 1
+        }
+
+        .three:hover .hide3 {
+            display: block;
+            position: absolute;
+            left: 100%;
+            top: 0%;
+            z-index: 1
+        }
+    </style>
 
 </head>
+
 <body>
     <h1>Форматы файлов</h1>
-    <div>.DOC или .doc (от англ. document) - расширение имени файла, используемое для файлов, представляющие текст с разметкой или без. Расширение .DOC часто использовалось для обозначения простых текстовых файлов без формирования, поднако позже стало использоваться для ввоичных форматов с разметкой. <br>
-    Документ MS Word
+    <div>.DOC или .doc (от англ. <a href="doc.png" target="_blank"><img src="doc.png" alt="">document</a>) - расширение
+        имени файла, используемое для файлов, представляющие текст с разметкой или без. Расширение .DOC часто
+        использовалось для обозначения простых текстовых файлов без формирования, поднако позже стало использоваться для
+        ввоичных форматов с разметкой. <br>
+        <a href="word.jpg" target="_blank"><img src="word.jpg">Документ MS Word</a>
     </div>
     <div>
-Portable Document Format(PDF) - межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка Postscript.
-Документ PDF
-</div>
+        Portable Document Format(<a href="pdf.png" target="_blank"><img src="doc.png" alt="">PDF</a>) - межплатформенный
+        формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка
+        Postscript. <br> <a href="pdf.png" target="_blank"><img src="pdf.png">Документ PDF</a>
+
+    </div>
     <div>
-ZIP - популярный формат сжания данных и архивации файлов. Файл в этом формате обычно имеет расширение .zip и хранит в сжаном или несжатом виде один или несколько файлов, котороео можно из него извлечь путем прспаковки с помощью спещиальной программы. 
-Архив
+        ZIP - популярный формат сжания данных и архивации файлов. Файл в этом формате обычно имеет расширение <a
+            href="doc.png" target="_blank"><img src="doc.png" alt="">.zip</a> и хранит в сжаном или несжатом виде один
+        или несколько файлов, котороео можно из него извлечь путем прспаковки с помощью спещиальной программы. <br>
+        <a href="archive.gif" target="_blank"><img src="archive.gif">Архив</a>
 
     </div>
     <h2>Это список файлов</h2>
+
     <ul>
-        <li>Документ MS Word</li>
-        <li>Документ PDF</li>
-        <li>Архив</li>
+        <li class="one"><img src="unrecognized-document.jpg">Документ MS Word <img class="hide1" src="word.jpg">
+        </li>
+        <li class="two"><img src="unrecognized-document.jpg">Документ PDF <img class="hide2" src="pdf.png" alt=""></li>
+        <li class="three"><img src="unrecognized-document.jpg">Архив <img class="hide3" src="archive.gif"></li>
     </ul>
 </body>
+
 </html>

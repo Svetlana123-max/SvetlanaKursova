@@ -5,20 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
-    
+
+
+
     th{
     background-color:#808080;
+    border: none;
 }
- tr{
-    border: 4px dotted
+ tr :not(first-child){
+    border: 2px dotted grey;
+    cursor: pointer;
 }   
 td:first-child{
     font-weight: bold;
 }
 tr:nth-child(odd){background-color:#d3d3d3}
 
+table {
+border-collapse: collapse;
+
+}
+
+table th {
+border: none; 
+}
+tr:first-child{
+border-top: none;
+} /*это свойство почему-то не применяется. Что тут не правильно?*/
+
+
+tr:last-child {
+ border-bottom: none;
+} /*это свойство почему-то не применяется. Что тут не правильно?*/
+
+td:first-child {
+ border-left: none;
+}
+td:last-child {
+ border-right: none;
+}
+
+
+
 p{text-align: center;
-width: 300px;}
+width: 500px;}
+
+
+tr:hover {
+background-color: rgb(90, 111, 123); 
+}
 </style>
 
 </head>
@@ -72,7 +107,8 @@ width: 300px;}
             <td>12365842</td>
             <td>14856</td>
         </tr>
-        <p>ДАННЫЕ О СОТРУДНИКАХ</p>
+        
     </table>
+    <p>ДАННЫЕ О СОТРУДНИКАХ</p>
 </body>
 </html>

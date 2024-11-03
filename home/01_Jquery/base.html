@@ -6,26 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        th {
-            background-color: #808080;
-        }
+        
+    th{
+    background-color:#808080;
+    border: none;
+}
+ tr :not(first-child){
+    border: 2px dotted grey;
+    cursor: pointer;
+}   
+td:first-child{
+    font-weight: bold;
+}
+tr:nth-child(odd){background-color:#d3d3d3}
 
-        tr {
-            border: 4px dotted
-        }
+table {
+border-collapse: collapse;
 
-        td:first-child {
-            font-weight: bold;
-        }
+}
 
-        tr:nth-child(odd) {
-            background-color: #d3d3d3
-        }
+table th {
+border: none; 
+}
+tr:first-child{
+border-top: none;
+} /*это свойство почему-то не применяется. Что тут не правильно?*/
 
-        p {
-            text-align: center;
-            width: 300px;
-        }
+
+tr:last-child {
+ border-bottom: none;
+} /*это свойство почему-то не применяется. Что тут не правильно?*/
+
+td:first-child {
+ border-left: none;
+}
+td:last-child {
+ border-right: none;
+}
+
+
+
+p{text-align: center;
+width: 500px;}
 
         #btn {
             color: white;
@@ -92,7 +114,7 @@
     </table>
     <br><br>
 
-    <input type="button" id="btn" value="нет скрытых строк">
+    <input type="button" id="btn" value="Нет скрытых строк">
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"
@@ -103,9 +125,9 @@
 
 
             $('.tr').click(function () {
-                console.log('hello')
+                
                 $(this).fadeOut();
-                $('#btn').val('Показать')
+                $('#btn').val('Показать все строки')
 
             })
 
